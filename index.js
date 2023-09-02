@@ -8,7 +8,7 @@ const allVideos = async ()=>{
    console.log(tabData);
 tabData.forEach(category => {
     const tabname=document.createElement('div');
-    tabname.innerHTML=`<a onclick="showData('${category.category_id}')" class="tab text-xl btn mx-4 hover:bg-red-500 hover:text-white">${category.category}</a>`
+    tabname.innerHTML=`<a onclick="showData('${category.category_id}')" class="tab md:text-xl btn mx-1 md:mx-4 hover:bg-red-500 hover:text-white">${category.category}</a>`
 
     tabContainer.appendChild(tabname)
 });
