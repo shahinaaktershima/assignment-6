@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ph tube</title>
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/6925b839bc.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-    <h2>my assignment</h2>
+    <header>
+        <nav class="container mx-auto my-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                      <img src="./Logo.png" alt="">
+                    </label>
+                   
+                  </div>
+                </div>
+                <div class="navbar-center" onclick="shortView()">
+                  <a   class="btn btn-ghost bg-slate-200 normal-case text-xl">Sort by view</a>
+                </div>
+                <div class="navbar-end"> 
+                  <button class="btn btn-ghost text-2xl bg-red-500 text-white">
+                   Blog
+                  </button>
+                </div>
+              </div>
+              <hr class="my-2">
+        </nav>
+    </header>
+    <!-- tab container -->
+    <main>
+      <div id="tab-container" class="mx-auto flex justify-center">
+        <!-- <div class="tabs">
+          <a class="tab">Tab 1</a> 
+          <a class="tab tab-active">Tab 2</a> 
+          <a class="tab">Tab 3</a>
+        </div> -->
+      </div>
+      <!-- card showing section -->
+      <div id="card-container" class="my-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-3">
+        <!-- <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <script src="./api.js"></script>
 </body>
 </html>
