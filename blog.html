@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-center text-3xl font-bold my-10">Answering the question</h2>
+    <div class="text-end my-5 mx-16"> <button class="btn btn-primary " onclick="window.location.href='index.html'">go back</button></div>
+<div class="w-3/4 mx-auto bg-slate-200 p-8 tex-xl">
+    <div>
+        <h2 class="text-2xl font-bold">01.Discussing the scope of var, let, and const:</h2>  
+           <!-- answer -->
+           <li>var :</li>
+           <p>in function: Variables declared with var are function-scoped, which means they are only accessible within the function in which they are defined.</p>
+           <p>globaly:If a var variable is declared outside of any function, it becomes a global variable and is accessible throughout the entire script..</p>
+           <li>let:</li>
+           <p>Variables declared with let are block-scoped, which means they are limited to the block in which they are defined</p>
+           <p>when it declare in a function then it can not access outside of the function</p>
+           <li>const :</li>
+           <p>Variables declared with const also have block-level scope, just like let.</p>
+   
+       </div>
+       <div>
+           <h2 class="text-2xl font-bold">02. The use cases of null and undefined</h2>
+           <li>null:</li>
+           <p>null is a value that represents the explicit absence of any object value or a value that has been intentionally set to indicate the absence of value or an empty state.</p>
+           <p>It is often used as a placeholder when you want to indicate that a variable or property has no meaningful value.</p>
+           <p>we can use null to check if a variable or property intentionally holds no value.</p>
+           <li>undefined :</li>
+           <p>Variables that are declared but not initialized are automatically assigned the value undefined</p>
+           <p>Function parameters that are not provided with a value default to undefined</p>
+           <p>When we try to access an object property that doesn't exist, it returns undefined</p>
+           
+   
+       </div>
+       <div>
+           <h2 class="text-2xl font-bold">03.What do you mean by REST API?</h2>
+           <!-- answer -->
+           <p>REST api:REST API stands for Representational State Transfer Application Programming Interface</p>
+           <p> It is a set of architectural principles and constraints used for designing networked applications and web services.</p>
+           <p>Key principles and characteristics of RESTful APIs include:</p>
+           <li> REST APIs use standard HTTP methods (GET, POST, PUT, DELETE, etc.) to perform operations on resources.</li>
+           <li>Resources can have multiple representations, such as JSON, XML, HTML, or plain text</li>
+           <li>etc....</li>
+       </div>
+</div>
+   
+</body>
+</html>
